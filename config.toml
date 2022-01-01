@@ -1,9 +1,10 @@
-baseurl      = "localhost"
+baseURL = "https://sneakybeaky.github.io/"
 title        = "My Blog"
 languageCode = "en-gb"
 theme        = "hello-friend-ng"
 paginate     = 10
 copyright = "Jon Barber"
+googleAnalytics = "G-CCWSRQDF2F"
 
 
 [permalinks]
