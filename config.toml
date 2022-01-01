@@ -1,3 +1,79 @@
-baseURL = 'http://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseurl      = "localhost"
+title        = "My Blog"
+languageCode = "en-gb"
+theme        = "hello-friend-ng"
+paginate     = 10
+copyright = "Jon Barber"
+
+
+[permalinks]
+posts = "/posts/:year/:month/:title/"
+
+[author]
+name = "Jon Barber"
+
+[params]
+dateform        = "Jan 2, 2006"
+dateformShort   = "Jan 2"
+dateformNum     = "2006-01-02"
+dateformNumTime = "2006-01-02 15:04"
+
+# Subtitle for home
+#homeSubtitle = "A simple and beautiful blog"
+
+# Set disableReadOtherPosts to true in order to hide the links to other posts.
+disableReadOtherPosts = false
+
+# Enable sharing buttons, if you like
+enableSharingButtons = false
+
+# Metadata mostly used in document's head
+description = "Jon Barber's blog"
+keywords = "homepage, blog"
+images = [""]
+
+[taxonomies]
+category = "blog"
+tag      = "tags"
+series   = "series"
+
+[languages]
+[languages.en]
+title = "Notes And Embellishments"
+readOtherPosts = "Read other posts"
+
+[languages.en.params.logo]
+logoText     = "$ cd /home/"
+# Set true to remove the logo cursor entirely.
+logoCursorDisabled = true
+# Set to a valid CSS color to change the cursor in the logo.
+logoCursorColor    = "#33ff33"
+
+# And you can even create generic menu
+[[menu.main]]
+identifier = "blog"
+name       = "Blog"
+url        = "/posts"
+
+# Social icons
+[[params.social]]
+name = "twitter"
+url  = "https://twitter.com/sneakybeaky"
+
+[[params.social]]
+name = "github"
+url  = "https://github.com/sneakybeaky"
+
+[[params.social]]
+name = "linkedin"
+url  = "https://www.linkedin.com/in/jonbarber/"
+
+[params.footer]
+trademark = true
+rss = true
+author = true
+
+topText = []
+bottomText = [
+    "Powered by <a href=\"http://gohugo.io\">Hugo</a>"
+]
